@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.board{
+  width: calc(64px *8);
+  height: calc(64px *8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell img{
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.cell{
+  width: 64px;
+  height: 64px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.cordinates {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 10px;
+}
+
+.black{
+  background-color: saddlebrown;
+}
+
+.white{
+  background-color: #9a9a9a;
+}
+
+.selected{
+  background-color: red;
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #22c022;
+}
+
+.Lost{
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: gray;
+}
